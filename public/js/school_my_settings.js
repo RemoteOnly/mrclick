@@ -1,0 +1,1 @@
+$(function(){"use strict";$(".release-sibling-button").on("click",function(){return!!confirm("「"+$(this).val()+"」を兄弟姉妹アカウントから解除してよろしいですか？")}),1===$(".verified").length&&$(".verified").hide()});

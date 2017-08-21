@@ -1,0 +1,34 @@
+@mixin gradient-top-lighten($color: #666, $lighten: 5%) {
+  @include linear-gradient(lighten($color, $lighten) 0%, $color 100%, $fallback: $color);
+}
+
+@mixin button($color: #6BB13E, $font-size: 14px, $text-color: white) {
+  display: inline-block;
+  position: relative;
+  height: $font-size * 2.6;
+  padding: 0 ($font-size * 2);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: rgba($text-color, .9) !important;
+  font-size: $font-size;
+  //font-weight: bold;
+  text-decoration: none;
+  line-height: $font-size * 2.6;
+  @include gradient-top-lighten($color, 5%);
+  cursor: pointer;
+  .fa {
+    color: rgba($text-color, .6);
+  }
+  &:hover {
+    text-decoration: none;
+    color: $text-color;
+    @include gradient-top-lighten(lighten($color, 5%), 5%);
+  }
+  &:active {
+    top: 1px;
+    @include gradient-top-lighten($color, 5%);
+  }
+  &:focus {
+    outline: 0;
+  }
+}

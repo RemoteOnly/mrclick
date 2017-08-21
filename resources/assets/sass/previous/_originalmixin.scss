@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/////////////////////////////////////////////////////////
+// mixin
+/////////////////////////////////////////////////////////
+$cream01:#fffbf1;//薄いクリーム
+$cream02:#f7f1e2;//スマホメニュー背景クリーム
+$cream03:#fff7d7;//body背景色
+$cream04:#fff0b2;//body背景色2
+$cream05:#ffec9b;//body背景色3
+
+$yellow01:#F5F257;//キーカラー黄色
+$red01:#E98D76;//キーカラー赤色
+$green01:#8BBC6F;//キーカラー緑色
+$purple01:#C67BBD;//キーカラー紫色
+
+$blue01:rgb(217, 249, 249);//キーカラーブルー
+$blue02:rgb(80, 210, 210);//キーカラーブルー濃いめ
+
+$brown01:#381D08;//濃い茶色
+
+
+$gray01:#efefed;//うすいグレー
+$gray02:#eeeeee;//次にうすいグレー
+$gray03:#686868;//濃いグレー
+$gray04:#dcdcdc;//サブメニュー背景グレー
+$gray05:#e0e0e0;//メインメニュー薄いグレー
+$gray06:#cecece;//サブメニュー薄い境界線グレー
+$gray07:#939393;//濃いグレー
+$gray08:#b5b3b3;//濃いグレー
+$gray09:#f7f7f7;//うすいグレー
+
+
+$font01:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ W3 JIS2004",'Yu Gothic', "游ゴシック体", "游ゴシック", SourceHanSansJP-Light, YuGothic,"メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "MS PGothic", Arial, Helvetica, Verdana, sans-serif;//use_morisawa
+$font02:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",'Yu Gothic', "游ゴシック体", "游ゴシック", SourceHanSansJP-Light, YuGothic,"メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "MS PGothic", Arial, Helvetica, Verdana, sans-serif;//not_morisawa（bold表示あり）
+$font03:YuMincho, '游明朝', serif;//明朝

@@ -1,0 +1,19 @@
+.terms-nav {
+  padding-left: 0 !important;
+  @include clearfix;
+  li {
+    display: block;
+    float: left;
+    a {
+      display: block;
+      padding: $margin-quarter $margin-half;
+    }
+  }
+}
+
+.terms {
+}
+
+.terms-students {
+  display: none;
+}

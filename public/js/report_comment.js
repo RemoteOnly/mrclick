@@ -1,0 +1,1 @@
+$(function(){"use strict";$(".report-comment__body-editable").jinplace({textOnly:!1,inputClass:"form-control",okButton:"保存する",cancelButton:"キャンセル"})});

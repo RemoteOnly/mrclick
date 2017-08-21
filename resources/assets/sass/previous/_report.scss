@@ -1,0 +1,396 @@
+.report-grade-select {
+  padding-left: 0 !important;
+  list-style-type: none !important;
+  li {
+    a {
+      display: block;
+      margin-bottom: $margin-half;
+      padding: $margin-base;
+      border: 1px solid $color-line;
+      border-radius: 4px;
+      background: #FFF;
+    }
+  }
+}
+.report-select-all-students {
+  font-size: $font-size-small;
+}
+
+.report-list-unread {
+  & > td > a {
+    font-weight: bold;
+  }
+}
+
+.report-form-student {
+  margin-top: $margin-2x;
+}
+.report-form-student__name {
+  margin-bottom: (-$margin-base);
+  font-size: 120%;
+}
+
+.report-table > thead > tr > th {
+  &#date, &#public, &#read {
+    cursor: pointer;
+  }
+  &#date {
+    width: 25%;
+  }
+  &#public {
+    width: 17%;
+  }
+  &#read {
+    width: 17%;
+  }
+  &:nth-of-type(4), &:nth-of-type(5) {
+    text-align: center;
+  }
+}
+.report-table > tbody > tr > td {
+  &:nth-of-type(4), &:nth-of-type(5) {
+    text-align: center;
+  }
+}
+
+.report-text {
+  padding: $margin-base;
+  border: 1px solid $color-line;
+  border-radius: 4px;
+  background: #FFF;
+}
+.report-block {
+  margin: ($margin-2x + $margin-base) 0 $margin-2x $margin-half;
+  padding-left: $margin-2x;
+  border-left: 6px solid $color-line;
+}
+.report-block-title {
+  display: block;
+  width: 100%;
+  margin-left: -($margin-2x + $margin-base) !important;
+  padding: 0 0 $margin-half 0;
+  background: $color-background;
+}
+.report-student {
+  padding-bottom: $margin-half;
+}
+.report-student__name {
+  margin-bottom: $margin-half;
+  font-size: 110%;
+}
+
+#report-comments {
+  margin-top: $margin-base * 4;
+  padding-top: $margin-base;
+  border-top: dotted 1px $color-line;
+}
+.report-comment {
+}
+.report-comment-mine {
+  position: relative;
+  margin: 0 50px $margin-base 0;
+  padding: $margin-base;
+  border: 1px solid $color-line;
+  border-radius: 4px;
+  background: #FFF;
+  &:before, &:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 10px;
+    margin-right: -10px;
+    border-style: solid;
+    border-width: 8px 0 8px 10px;
+    content: "";
+  }
+  &:before {
+    right: 0;
+    border-color: transparent transparent transparent $color-line;
+  }
+  &:after {
+    right: 2px;
+    border-color: transparent transparent transparent #FFF;
+  }
+  .report-comment__icon {
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+  }
+}
+.report-comment-other {
+  position: relative;
+  margin: 0 0 $margin-base 50px;
+  padding: $margin-base;
+  border: 1px solid $color-line;
+  border-radius: 4px;
+  background: #FFF;
+  &:before, &:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 10px;
+    margin-left: -10px;
+    border-style: solid;
+    border-width: 8px 10px 8px 0;
+    content: "";
+  }
+  &:before {
+    left: 0;
+    border-color: transparent $color-line transparent transparent;
+  }
+  &:after {
+    left: 2px;
+    border-color: transparent #FFF transparent transparent;
+  }
+  .report-comment__icon {
+    position: absolute;
+    left: -50px;
+    bottom: 0;
+  }
+}
+.report-comment__body {
+  margin-bottom: $margin-half !important;
+}
+.report-comment__meta {
+  text-align: right;
+  font-size: $font-size-small;
+}
+
+.report-belt-not-published {
+  margin: $margin-base 0 $margin-2x;
+  padding: $margin-half $margin-base;
+  border-radius: 4px;
+  color: #FFF;
+  background: lighten($color-danger, 8%);
+}
+
+.report-search-result {
+  padding-top: $margin-2x;
+  border-top: 2px solid lighten($color-line, 20%);
+}
+
+.report-form {
+  @media screen and (max-width: $width-mobile-limit) {
+    text-align: center;
+  }
+  .btn {
+    margin: 3px !important;
+  }
+}
+
+.report-profile {
+  margin-bottom: $margin-base;
+  @include clearfix;
+  border-radius: 8px;
+  .report-profile-icon {
+    float: left;
+    padding: 2px 4px 2px 0;
+  }
+  .report-profile-name {
+    float: left;
+    font-size: $font-size-xlarge;
+    font-weight: 600;
+    line-height: 40px;
+    .report-profile-name__label {
+      display: inline-block;
+      text-align:center;
+      vertical-align:middle;
+      line-height: 1;
+      background-color: $color-background-ex;
+      border-radius: 50%;
+      border: 2px solid $color-icon-border;
+      padding:1px;
+      font-size: $font-size-medium;
+      font-weight: normal;
+    }
+    .report-profile-name__info {
+      display: inline-block;
+      margin-left: 4px;
+      font-size: $font-size-medium;
+      font-weight: normal;
+    }
+    a {
+      color: $color-text;
+    }
+  }
+  .report-profile-back {
+    float: right;
+    font-size: $font-size-xlarge;
+    font-weight: 600;
+    line-height: 40px;
+    padding-right: 30px;
+    .btn-negative {
+      font-size: 13px !important;
+      padding: 0px 10px !important;
+    }
+  }
+}
+
+// 一覧
+.report-list {
+}
+/*
+.report-list-header {
+  display: table;
+  margin-bottom: 2px;
+  font-size: $font-size-small;
+  color: lighten($color-text, 12%);
+  @at-root {
+    &__teacher {
+      display: table-cell;
+      width: 120px;
+      max-width: 120px;
+      text-align: center;
+      @media screen and (max-width: $width-mobile-limit) {
+        width: 90px;
+        max-width: 90px;
+      }
+    }
+    &__info {
+      display: table-cell;
+      padding-left: $margin-2x;
+      @media screen and (max-width: $width-mobile-limit) {
+        padding-left: $margin-base;
+      }
+    }
+  }
+}
+*/
+.report-link-area {
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  color: #493B33 !important;
+  text-decoration: none;
+}
+.report-list-item {
+  display: table;
+  width: 100%;
+  padding: $margin-half 0;
+  text-decoration: none;
+  color: $color-text !important;
+  &:nth-child(odd) {
+    background: $color-background-footer;
+  }
+  &:hover {
+    .report-list-item__info__date {
+      text-decoration: underline;
+    }
+  }
+}
+.report-list-item__chkbox {
+  display: table-cell;
+  width: 60px;
+  max-width: 60px;
+  margin: $margin-half 0;
+  padding: 0 $margin-half;
+  text-align: center;
+  vertical-align: middle;
+  font-size: $font-size-small;
+  @media screen and (max-width: $width-mobile-limit) {
+    width: 60px;
+    max-width: 60px;
+  }
+  input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+  }
+}
+.report-list-item__student {
+  display: table-cell;
+  width: 120px;
+  max-width: 120px;
+  margin: $margin-half 0;
+  padding: 0 $margin-half;
+  text-align: center;
+  vertical-align: middle;
+  font-size: $font-size-small;
+  @media screen and (max-width: $width-mobile-limit) {
+    width: 90px;
+    max-width: 90px;
+  }
+}
+.report-list-item__info {
+  display: table-cell;
+  padding-left: $margin-2x;
+  vertical-align: middle;
+  @media screen and (max-width: $width-mobile-limit) {
+    margin-left: $margin-half;
+    padding-left: $margin-half;
+  }
+  @at-root {
+    &__date {
+      font-size: $font-size-smaller;
+      font-weight: 600;
+    }
+    &__grade-subjects {
+      margin: 2px 0 2px -0.5em;
+      font-size: $font-size-small;
+      color: lighten($color-text, 24%);
+    }
+    &__teacher {
+      font-size: $font-size-smaller;
+    }
+    @media screen and (min-width: $width-mobile-limit) {
+      &__date {
+        float: left;
+        width: 200px;
+      }
+      &__grade-subjects {
+        float: left;
+        margin: 0 0 0 $margin-half;
+        font-size: $font-size-smaller;
+        color: lighten($color-text, 12%);
+      }
+      &__teacher {
+        clear: both;
+      }
+    }
+  }
+}
+.report-list-item__info-without-student {
+  @media screen and (max-width: $width-mobile-limit) {
+    padding-left: $margin-base;
+  }
+}
+.report-list-item__meta {
+  display: table-cell;
+  width: 84px;
+  vertical-align: middle;
+  font-size: $font-size-smaller;
+  color: lighten($color-text, 12%);
+  @media screen and (max-width: $width-mobile-limit) {
+    width: 50px;
+    font-size: $font-size-small;
+  }
+  .fa-fw {
+    width: 1.02em;
+  }
+  @at-root {
+    &__publishing-status {
+      margin-bottom: 4px;
+    }
+    &__read-status {
+      margin-top: 4px;
+    }
+  }
+}
+
+#Textbook1, #Textbook2, #Textbook3, #Textbook4, #Textbook5, #Textbook6 {
+  border-bottom: 1px dotted #808080;
+  padding-bottom: 30px;
+  margin-bottom: 25px;
+}
+
+#Textbook1 {
+  border-top: 1px dotted #808080;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+#homeworktable {
+  .btn-copy {
+    padding-right: 10px;
+    color: #ad7c60;
+  }
+}

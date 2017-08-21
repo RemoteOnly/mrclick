@@ -1,0 +1,1 @@
+$(function(){"use strict";$(".delete-button").on("click",function(){return!!confirm("「"+$(this).val()+"」を削除してよろしいですか？")}),$(".send-email-button").on("click",function(){return!!confirm("「"+$(this).val()+"」に確認メールを再送信しますか？")}),$('button[name="is_entering"]').on("click",function(){return!!confirm($(this).data("name")+"に"+("1"===$(this).val()?"入室":"退室")+"記録をつけてよろしいですか？")})});

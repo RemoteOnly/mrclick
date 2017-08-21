@@ -1,0 +1,67 @@
+$width-container-min: 756px;
+$width-form-control-max: 540px;
+
+$font-size-medium: 14px;
+$font-size-smaller: 13px;
+$font-size-small: 12px;
+$font-size-xsmall: 10px;
+$font-size-larger: 16px;
+$font-size-large: 18px;
+$font-size-xlarge: 22px;
+$font-size-form: 16px;
+
+$font-family-sans-serif: "Lucida Grande", "Lucida Sans Unicode", Roboto, "Droid Sans", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Helvetica, Arial, Verdana, sans-serif !default;
+$font-family-sans-serif-bold: "ヒラギノ角ゴ StdN", "Hiragino Kaku Gothic StdN", "メイリオ", Meiryo, Roboto, "Droid Sans", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Helvetica, Arial, Verdana, sans-serif, "ＭＳ Ｐゴシック", Helvetica, Arial, Verdana, sans-serif !default;
+$font-family-maru: "Varela Round", "Lucida Grande", "Lucida Sans Unicode", Roboto, "Droid Sans", "HG丸ゴシックM-PRO", "Hiragino Maru Gothic Pro", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Helvetica, Arial, Verdana, sans-serif !default;
+
+$color-text: #493B33;
+$color-text-sub: lighten($color-text, 48%);
+$color-background: #FFFFFA;
+$color-background-ex: #E8E2DB;
+$color-background-header: #FFF;
+$color-background-footer: #F7F5F4;
+$color-background-breadcrumbs: #B4A094;
+$color-background-sidenav: #493B32;
+$color-danger: #DB4C26;
+$color-placeholder: #CCC;
+$color-line: #B4A094;
+$color-line-header: #E8E2DB;
+$color-line-notification: lighten($color-line, 24%);
+$color-header-nav-item-notification: #B19D90;
+$color-header-nav-item-toggle: #B19D90;
+$color-breadcrumbs-border: #AC9688;
+$color-footer-border: #E8E2DB;
+$color-link: #E95F48;
+$color-link-footer: #6BB13E;
+$color-icon-border: #EEE;
+$color-leaf-green: #97CB7C;
+$color-notification: #DB4437;
+
+$margin-base: 10px;
+$margin-2x: $margin-base * 2;
+$margin-half: 6px;
+$margin-quarter: 3px;
+
+$width-mobile-limit: 540px;
+
+@import "bourbon";
+
+@import "mixins";
+@import "reset";
+@import "variables";
+@import "global";
+@import "header";
+@import "footer";
+@import "navbar";
+@import "side_nav";
+@import "notification";
+
+@import "top";
+@import "student";
+@import "student_my";
+@import "report";
+@import "news";
+@import "pages";
+@import "admin";
+@import "dropdown";
+@import "wysiwyg";

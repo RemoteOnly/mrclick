@@ -1,0 +1,1 @@
+$(function(){"use strict";function s(s,a){var o=$("#"+s);$(o).replaceWith($(o).val(o.val()).attr({type:a,name:"password",id:"password","class":"form-control"}))}$("#show-password").change(function(){$("#show-password:checked").val()?s("password","text"):s("password","password")})});

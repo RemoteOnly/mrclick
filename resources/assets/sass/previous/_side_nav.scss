@@ -1,0 +1,69 @@
+.sidenav {
+  position: fixed;
+  top: 0;
+  right: -240px;
+  bottom: 0;
+  width: 240px;
+  padding: $margin-base;
+  background: $color-background-sidenav;
+  opacity: 0.9;
+  z-index: 200;
+  @include transition(right, .2s, ease-out);
+  &.sidenav-shown {
+    right: 0;
+    &+.sidenav-overlay {
+      visibility: visible;
+      opacity: 0.9;
+    }
+  }
+  a {
+    color: #FFF;
+    text-decoration: none;
+    &:hover, a:active {
+      text-decoration: underline;
+    }
+    .fa {
+      color: rgba(255, 255, 255, .4);
+    }
+  }
+}
+.sidenav-close {
+  padding: 0 0 $margin-base 0;
+  text-align: right;
+}
+.sidenav-nav {
+  border-top: solid 1px rgba(255, 255, 255, .2);
+  li {
+    padding: $margin-base 0;
+    border-bottom: solid 1px rgba(255, 255, 255, .2);
+    ul {
+      margin: $margin-base 0 0 $margin-2x;
+      font-size: $font-size-small;
+      li {
+        display: inline-block;
+        margin-right: $margin-half;
+        padding: 0;
+        border: none;
+      }
+      a {
+        display: inline-block;
+        padding: 2px 4px;
+        border: solid 1px #FFF;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+.sidenav-overlay {
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  @include transition(opacity, .2s, ease-out);
+  z-index: 100;
+}

@@ -1,0 +1,31 @@
+.notifications {
+  width: 100%;
+}
+.notification {
+  border-bottom: solid 1px $color-line-notification;
+  &:last-child {
+    border: none;
+  }
+  td {
+    padding: $margin-base 0 $margin-base $margin-half;
+    vertical-align: middle;
+  }
+}
+.notification__is-read {
+  width: 20px;
+  padding-left: 0 !important;
+  text-align: center;
+  font-size: $font-size-small;
+  i {
+    color: $color-text-sub;
+    &.fa-circle {
+      color: $color-notification;
+    }
+  }
+}
+.notification__created-at {
+  font-size: $font-size-small;
+  color: $color-text-sub;
+  text-align: right;
+  white-space: nowrap;
+}

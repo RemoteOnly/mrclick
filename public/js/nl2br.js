@@ -1,0 +1,1 @@
+!function(n){"use strict";n.extend({nl2br:function(n){return n.replace(/\r\n|\n\r/g,"<br>")}})}(jQuery);

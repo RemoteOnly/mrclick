@@ -1,0 +1,63 @@
+.admin-reports {
+  margin-bottom: $margin-2x;
+  border-collapse: collapse;
+  border: 1px solid $color-line;
+  tr, th, td {
+    border: 1px solid $color-line;
+  }
+  th, td {
+    padding: 2px 4px;
+  }
+  th {
+    font-weight: 600;
+  }
+  thead th {
+    text-align: center;
+    background-color: lighten($color-text, 60%);
+  }
+}
+
+.admin-reports__school-name {
+  width: 170px;
+  max-width: 170px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+.switch {
+  width: 80px;
+  height: 20px;
+  background: #ddd;
+  border-radius: 10px;
+  text-align: center;
+  color: #FFF;
+  position: relative;
+  transition: all .5s;
+}
+.switch::before {
+  content:'';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: #FFF;
+  border-radius: 100%;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  transition: all .5s;
+}
+.switch::after {
+  content: 'off';
+  display: inline-block;
+}
+.switch.active-textbook::after {
+  content: 'on';
+}
+.switch.active-textbook::before {
+  right: 60px;
+}
+.switch.active-textbook {
+  background-color: #5bbdca ;
+}

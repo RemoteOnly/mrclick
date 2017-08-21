@@ -1,0 +1,59 @@
+.header {
+  background: url('/img/header_line.png') repeat-x $color-background-header;
+  background-size: 138px;
+  margin-left: -($margin-2x);
+  margin-right: -($margin-2x);
+  padding-left: $margin-2x;
+  padding-right: $margin-2x;
+  @include clearfix;
+  @media screen and (max-width: $width-mobile-limit) {
+    margin-left: -($margin-base);
+    margin-right: -($margin-base);
+    padding-left: $margin-base;
+    padding-right: $margin-base;
+  }
+  &.header-without-breadcrumbs {
+    border-bottom: solid 2px $color-line-header;
+  }
+}
+.header-logo {
+  float: left;
+  margin: 20px 0 8px 0;
+}
+.header-nav {
+  float: right;
+  margin: 15px 0 0 0;
+}
+.header-nav-items {
+  @include clearfix;
+  li {
+    float: left;
+    margin-left: $margin-2x;
+  }
+  .header-nav-item-teacher-notification a {
+    position: relative;
+    display: block;
+    margin-top: 2px;
+    font-size: 180%;
+    color: lighten($color-header-nav-item-notification, 4%);
+    .header-nav-item-teacher-notification__count {
+      position: absolute;
+      display: block;
+      top: 4px;
+      right: -1px;
+      font-size: 12px;
+      line-height: 1;
+      color: $color-notification;
+    }
+  }
+  .header-nav-item-profile-icon a {
+    display: block;
+    margin-top: 2px;
+  }
+  .header-nav-item-toggle a {
+    display: block;
+    font-size: 200%;
+    color: $color-header-nav-item-toggle;
+  }
+}
+

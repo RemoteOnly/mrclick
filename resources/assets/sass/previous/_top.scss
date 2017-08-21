@@ -1,0 +1,178 @@
+.top-main {
+  margin-left: -($margin-2x);
+  margin-right: -($margin-2x);
+  @media screen and (max-width: $width-mobile-limit) {
+    margin-left: -($margin-base);
+    margin-right: -($margin-base);
+  }
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.top-main-description {
+  margin-top: $margin-2x;
+  p {
+    padding: $margin-base 0 $margin-2x 0;
+    line-height: 1.8;
+    background: url('/img/top_fig_01.png') no-repeat right bottom;
+    background-size: 140px;
+    @media screen and (max-width: $width-mobile-limit) {
+      background: none;
+    }
+  }
+}
+
+.top-about {
+  margin: 30px -1 * ($margin-2x);
+  padding: 30px $margin-2x;
+  background: url('/img/header_line.png') repeat-x;
+  background-size: 138px;
+  @media screen and (max-width: $width-mobile-limit) {
+    margin: 30px -1 * ($margin-base);
+  }
+}
+
+.top-about-sub {
+  padding-right: 300px;
+  padding-bottom: 0;
+  background-image: url('/img/top_fig_02.png'), url('/img/top_fig_03.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 10px, right bottom;
+  background-size: 222px, 232px;
+  @media screen and (max-width: $width-mobile-limit) {
+    padding-right: 0;
+    padding-bottom: 210px;
+    background-image: url('/img/top_fig_03.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 232px;
+  }
+}
+
+.top-about-sub-block__simple {
+  @media screen and (max-width: $width-mobile-limit) {
+    padding-bottom: 268px;
+    background-image: url('/img/top_fig_02.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 222px;
+  }
+}
+
+.top-sub-title {
+  .top-sub-title__logo {
+    width: 100px;
+    margin-right: 6px;
+  }
+  strong {
+    font-weight: 600;
+    background-image: linear-gradient(transparent 70%, #F0BDB0 0%);
+  }
+}
+
+.top-sub-sub-title {
+  display: inline-block;
+  margin-top: 24px !important;
+  padding: 4px 12px;
+  font-weight: normal;
+  background: #E8E2DB;
+  border: {
+    right: 2px solid #897F78;
+    bottom: 2px solid #897F78;
+  }
+  @media screen and (max-width: $width-mobile-limit) {
+    display: block;
+  }
+}
+
+.top-sub-sub-description {
+  margin-bottom: $font-size-smaller * 0.6 !important;
+  font-size: $font-size-smaller;
+}
+
+.top-voices-title {
+  border-bottom: 2px solid #897F78;
+  line-height: 1;
+  span {
+    display: inline-block;
+    margin: 0;
+    padding: 8px 12px 6px 12px;
+    background: #897F78;
+    color: #FFF;
+    font-size: $font-size-medium;
+    border-radius: 4px 4px 0 0;
+  }
+}
+.top-voice {
+  width: 100%;
+  margin: $margin-2x 0;
+  font-size: $font-size-smaller;
+  @include clearfix;
+  .top-voice-title {
+    font-size: $font-size-medium;
+    font-weight: 700;
+  }
+  .top-voice-photo {
+    float: left;
+    width: 108px;
+    max-width: 108px;
+    @media screen and (max-width: $width-mobile-limit) {
+      float: none;
+      margin: 0 auto;
+    }
+    p {
+      margin-bottom: $margin-base;
+    }
+    img {
+      max-width: 100%;
+      border: 6px solid $color-leaf-green;
+      border-radius: 50%;
+    }
+  }
+  .top-voice-text {
+    padding-top: 4px;
+    padding-left: 108px + $margin-2x;
+    p {
+      margin-bottom: $margin-base;
+    }
+    @media screen and (max-width: $width-mobile-limit) {
+      padding-top: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+.top-for-owners-title {
+  border-bottom: 2px solid #897F78;
+  line-height: 1;
+  span {
+    display: inline-block;
+    margin: 0;
+    padding: 8px 12px 6px 12px;
+    background: #897F78;
+    color: #FFF;
+    font-size: $font-size-medium;
+    border-radius: 4px 4px 0 0;
+  }
+}
+
+.top-for-owners-contact {
+  padding-left: 0 !important;
+  list-style: none;
+  text-align: center;
+  @media screen and (max-width: $width-mobile-limit) {
+    margin-left: -$margin-base;
+    margin-right: -$margin-base;
+  }
+  li {
+    display: inline-block;
+    margin: 0 $margin-base;
+    list-style: none;
+    @media screen and (max-width: $width-mobile-limit) {
+      margin: 0;
+    }
+  }
+}
+

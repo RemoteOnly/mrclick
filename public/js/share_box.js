@@ -1,0 +1,1 @@
+$(function(){"use strict";$("#share_url").on("click",function(t){t.target.setSelectionRange(0,t.target.value.length)})});

@@ -1,0 +1,1 @@
+$(function(){"use strict";$("button[name=delete]").on("click",function(){return!!confirm("本当に削除してよろしいですか？")})});
